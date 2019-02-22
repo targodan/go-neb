@@ -1,11 +1,11 @@
 package util
 
 import (
+	"fmt"
 	"math/rand"
 	"regexp"
 	"strconv"
 	"strings"
-    "fmt"
 )
 
 type Dice []Die

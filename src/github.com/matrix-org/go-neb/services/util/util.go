@@ -25,7 +25,7 @@ func (s *Service) roll(roomID, userID string, args []string) (interface{}, error
 
 	return &gomatrix.TextMessage{
 		MsgType: "m.notice",
-		Body:    "You rolled: " + strings.Join(results, ", "),
+		Body:    userID + " rolled: " + strings.Join(results, ", "),
 	}, nil
 }
 
